@@ -5,7 +5,7 @@ This is an official PyTorch implementation of "[SparX: A Sparse Cross-Layer Conn
 # Introduction
 ```SparX``` is a new sparse cross-layer connection mechanism to effectively improve cross-layer feature interaction and reuse in vision backbone networks.
 <center> 
-<img src="images/arch.jpg" width="40%" height="auto">
+<img src="images/arch.jpg" width="70%" height="auto">
 </center>
 
 # Image Classification
