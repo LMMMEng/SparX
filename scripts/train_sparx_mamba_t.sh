@@ -17,4 +17,3 @@ train.py \
 --model-ema-decay 0.9998 \
 --native-amp \
 --clip-grad 5
-# Please disable amp training if you encounter loss=nan

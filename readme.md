@@ -19,13 +19,11 @@ python==3.10
 # Packages:
 torch==2.3.1
 timm==0.6.12
-mmcv==2.1.0
-mmengine=0.10.4
 # Other Dependencies:
-cd kernels/selective_scan && pip install . # Borrow from VMamba
+cd kernels/selective_scan && pip install .
 ```
 ## 2. Data Preparation
-[ImageNet](https://image-net.org/) with the following folder structure, you can extract ImageNet by this [script](https://gist.github.com/BIGBALLON/8a71d225eff18d88e469e6ea9b39cef4).
+Prepare [ImageNet](https://image-net.org/) with the following folder structure, you can extract ImageNet by this [script](https://gist.github.com/BIGBALLON/8a71d225eff18d88e469e6ea9b39cef4).
 
 ```
 │imagenet/
@@ -43,7 +41,7 @@ cd kernels/selective_scan && pip install . # Borrow from VMamba
 │  ├── ......
 ```
 
-## 3. Main Results on ImageNet with Pretrained Models
+## 3. Main Results on ImageNet-1K with Pretrained Models
 
 | Models      | Input Size | FLOPs (G) | Params (M) | Top-1 (%) | Download |
 |:-----------:|:----------:|:---------:|:----------:|:----------:|:----------:|
@@ -69,9 +67,6 @@ python3 validate.py \
 --pretrained # or --checkpoint /path/to/checkpoint 
 ```
 
-# Dense Predictions
-We conduct dense predictions based on [mmseg](https://github.com/open-mmlab/mmsegmentation) and [mmdet](https://github.com/open-mmlab/mmdetection). Please stay tuned for more updates.
-
 
 # Citation
 If you find this project useful for your research, please consider citing:
@@ -87,9 +82,9 @@ If you find this project useful for your research, please consider citing:
 # Acknowledgment
 Our implementation is mainly based on the following codebases. We gratefully thank the authors for their wonderful works.
 > [timm](https://github.com/rwightman/pytorch-image-models)   
+> [mmdet](https://github.com/open-mmlab/mmdetection)     
+> [mmseg](https://github.com/open-mmlab/mmsegmentation)   
 > [VMamba](https://github.com/MzeroMiko/VMamba)  
-> [mmdetection](https://github.com/open-mmlab/mmdetection)     
-> [mmsegmentation](https://github.com/open-mmlab/mmsegmentation)
 
 # Contact
 If you have any questions, please feel free to [create issues](https://github.com/LMMMEng/SparX/issues) or [contact me](lmzmm.0921@gmail.com).
