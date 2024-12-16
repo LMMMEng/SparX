@@ -762,7 +762,7 @@ def _cfg(url=None, **kwargs):
 
 
 @register_model
-def sparx_mamba_t(pretrained=1, **kwargs):
+def sparx_mamba_t(pretrained=False, **kwargs):
     
     dense_config = {
         'dense_step': [1, 1, 2, 1],
