@@ -41,10 +41,10 @@ bash scripts/dist_test.sh config/maskrcnn_sparx_mamba_t_fpn_1x_coco.py path-to-c
 If you find this project useful for your research, please consider citing:
 
 ```
-@article{lou2024sparx,
+@inproceedings{lou2024sparx,
   title={SparX: A Sparse Cross-Layer Connection Mechanism for Hierarchical Vision Mamba and Transformer Networks},
   author={Lou, Meng and Fu, Yunxiang and Yu, Yizhou},
-  journal={arXiv preprint arXiv:2409.09649},
-  year={2024}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2025}
 }
 ```
