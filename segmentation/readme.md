@@ -30,7 +30,7 @@ bash scripts/dist_train.sh configs/upernet_sparx_mamba_t_ade20k.py 8
 ## 5. Validation
 To evaluate ``SparX-Mamba-T + UperNet`` models on COCO dataset, run:
 ```
-bash scripts/dist_test.sh configs/upernet_sparx_mamba_t_ade20k.py 8 path-to-checkpoint 8
+bash scripts/dist_test.sh configs/upernet_sparx_mamba_t_ade20k.py path-to-checkpoint 8
 ```
 
 ## Citation
